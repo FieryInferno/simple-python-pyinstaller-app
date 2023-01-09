@@ -16,5 +16,4 @@ node {
 			archiveArtifacts 'dist/add2vals'
 		}
         }
-    }
 }
