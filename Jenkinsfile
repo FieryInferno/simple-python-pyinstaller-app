@@ -13,6 +13,6 @@ node {
 		}
         }
 	stage('Deploy') {
-		
+		checkout scm
 	}
 }
