@@ -12,7 +12,4 @@ node {
 			junit 'test-reports/results.xml'
 		}
         }
-	stage('Deploy') {
-		checkout scm
-	}
 }
