@@ -14,6 +14,7 @@ node {
 		}
 	}
 	stage('Manual Approval') {
+		checkout scm
 		input message: 'Lanjutkan ke tahap Deploy?'
 	}
 	stage('Deploy') {
