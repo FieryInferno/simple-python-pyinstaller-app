@@ -1,9 +1,8 @@
 node {
-	withDockerContainer('qnib/pytest') {
+	withDockerContainer('python:2-alpine') {
 		stage('Build') {
 			checkout scm
-			// sh 'python -m py_compile sources/add2vals.py sources/calc.py'
-			sh 'py.test --verbose --junit-xml test_reports/result.xml sources/test_calc.py'
+			sh 'python -m py_compile sources/add2vals.py sources/calc.py'
 		}
         }
 	withDockerContainer('qnib/pytest') {
